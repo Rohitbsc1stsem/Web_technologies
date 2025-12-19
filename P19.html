@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submission Confirmation</title>
+</head>
+<body>
+
+<h3>User Form</h3>
+
+<form onsubmit="showMessage(event)">
+    <label>
+        Name:
+        <input type="text" id="name" required>
+    </label><br><br>
+
+    <label>
+        Email:
+        <input type="email" id="email" required>
+    </label><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<p id="message"></p>
+
+<script>
+    function showMessage(event) {
+        event.preventDefault(); // prevents page refresh
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+
+        document.getElementById("message").innerHTML =
+            "Thank you, <b>" + name + "</b>!<br>Your email is: <b>" + email + "</b>";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+.style-input{
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #999;
+    border-radius: 6px;
+    background-color: #f9f9;
+    font-size: 16px;
+}
+
+.style-input:focus{
+    border-color: #4a90e2;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.hoverBtn {
+    padding: 10px 18px;
+    background-color: #4a90e2;
+    border: 2px solid #cccccc;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hoverBtn:hover{
+    background-color: aquamarine;
+    border-color: #1c4fa1;
+    color: white;
+}

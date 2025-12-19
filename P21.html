@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clickable List</title>
+    <style>
+        li {
+            cursor: pointer;
+            padding: 8px;
+            margin: 4px 0;
+            border: 1px solid #ccc;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Click an Item</h3>
+
+<ul id="itemList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+
+<script>
+    const items = document.querySelectorAll("#itemList li");
+
+    items.forEach(function(item) {
+        item.addEventListener("click", function() {
+            this.style.backgroundColor = "lightblue";
+        });
+    });
+</script>
+
+</body>
+</html>

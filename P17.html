@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Append Paragraph Example</title>
+</head>
+<body>
+
+<h3>Append Paragraph Demo</h3>
+
+<div id="content">
+    <p>This is the existing content.</p>
+</div>
+
+<button onclick="addParagraph()">Add Paragraph</button>
+
+<script>
+    function addParagraph() {
+        const para = document.createElement("p");
+        para.innerText = "This is a newly added paragraph.";
+        document.getElementById("content").appendChild(para);
+    }
+</script>
+
+</body>
+</html>

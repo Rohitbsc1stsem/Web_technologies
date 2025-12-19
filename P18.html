@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number Generator</title>
+</head>
+<body>
+
+<h3>Random Number Generator (1 to 10)</h3>
+
+<p id="result">Click the button to generate a number</p>
+
+<button onclick="generateRandom()">Generate Number</button>
+
+<script>
+    function generateRandom() {
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
+        document.getElementById("result").innerText = randomNumber;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Validation Form</title>
+</head>
+<body>
+
+<h3>Registration Form</h3>
+
+<form onsubmit="validatePassword(event)">
+    <label>
+        Email:
+        <input type="email" id="email" required>
+    </label><br><br>
+
+    <label>
+        Password:
+        <input type="password" id="password" required>
+    </label><br><br>
+
+    <label>
+        Confirm Password:
+        <input type="password" id="confirmPassword" required>
+    </label><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    function validatePassword(event) {
+        event.preventDefault(); // Prevent page reload
+
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirmPassword").value;
+
+        if (password === confirmPassword) {
+            alert("Success! Passwords match.");
+        } else {
+            alert("Error! Passwords do not match.");
+        }
+    }
+</script>
+
+</body>
+</html>
