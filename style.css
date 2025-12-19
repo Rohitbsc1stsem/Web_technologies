@@ -1,0 +1,11 @@
+.gallery{
+    display: flex;
+    gap: 12px;
+}
+
+.gallery img{
+    padding: 6px;
+    border: 1px solid #ccc;
+    width: 150px;
+    height: auto;
+}
